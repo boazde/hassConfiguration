@@ -1,6 +1,6 @@
 #### Switches.yaml ####
 - platform: broadlink
-  host: !secret sonoff_rm_basic_MAC
+  host: !secret sonoff_rm_basic_IP
   mac: !secret sonoff_rm_basic_MAC
   timeout: 15
   switches:

@@ -59,15 +59,12 @@ emulated_hue:
 # Weather prediction
 #sensor:
 # - platform: yr
-weather:
-  - platform: yweather
-    name: Weather
-    woeid: !secret yahoo_woeid
+#weather:
+#  - platform: yweather
+#    name: Weather
+#    woeid: !secret yahoo_woeid
 
 
-group:
-  living_room:
-    - switch.electra_aircon
 
 #myqtt:
 
@@ -89,9 +86,9 @@ switch: !include switches.yaml
 device_tracker: !include device_tracker.yaml
 light: !include lights.yaml
 script: !include scripts.yaml
+group: !include groups.yaml
 
 #camera: !include camera.yaml
-#group: !include groups.yaml
 #history: !include history.yaml
 #logbook: !include logbook.yaml
 #logger: !include logger.yaml

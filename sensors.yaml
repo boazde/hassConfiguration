@@ -2,5 +2,18 @@
 - platform: broadlink
   host: !secret sonoff_rm_pro_IP
   mac: !secret sonoff_rm_pro_MAC
+  friendly_name: 'Pro'
   monitored_conditions:
     - 'temperature'
+
+#### TIME/DATE ##################################
+- platform: time_date
+  display_options:
+      - 'time'
+      - 'date'
+- platform: worldclock
+  time_zone: Etc/UTC
+  name: 'UTC'
+- platform: worldclock
+  time_zone: America/New_York
+  name: 'Ann Arbor'
