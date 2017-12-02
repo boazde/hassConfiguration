@@ -1,0 +1,6 @@
+#### Sensors.yaml ####
+- platform: broadlink
+  host: !secret sonoff_rm_pro_IP
+  mac: !secret sonoff_rm_pro_MAC
+  monitored_conditions:
+    - 'temperature'
