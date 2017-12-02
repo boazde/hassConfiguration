@@ -1,15 +1,20 @@
 #### groups.yaml ####
 Living Room:
-  control: hidden
+  name: Living Room
+#  control: hidden
   entities:
     - switch.electra_aircon
     - switch.Samsung_Tv
     - switch.Yamaha
     - media_player.yamaha
-    - switch.sonoff
     - light.table_lamp
     - sensor.temperature
-Bedroom: sensor.broadlink_sensor_temperature
+Bedroom: 
+  name: Bed Room
+#  control: hidden
+  entities:
+    - sensor.broadlink_sensor_temperature
+    - switch.sonoff
 Rooms:
   view: yes
   name: Rooms
