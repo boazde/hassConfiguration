@@ -22,9 +22,36 @@
 
 
 - platform: mqtt
-  name: "SoNOFF"
+  name: "Kitchen"
   state_topic: "home/sonoff/living_room/1/stat"
   command_topic: "home/sonoff/living_room/1"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "SoNOFF2"
+  state_topic: "home/sonoff/living_room/2/stat"
+  command_topic: "home/sonoff/living_room/2"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "SoNOFF3"
+  state_topic: "home/sonoff/living_room/3/stat"
+  command_topic: "home/sonoff/living_room/3"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "SoNOFF4"
+  state_topic: "home/sonoff/living_room/4/stat"
+  command_topic: "home/sonoff/living_room/4"
   qos: 0
   payload_on: "on"
   payload_off: "off"

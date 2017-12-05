@@ -7,21 +7,28 @@ Living Room:
     - switch.Samsung_Tv
     - switch.Yamaha
     - media_player.yamaha
-    - light.table_lamp
+    - light.corner_lamp
     - sensor.temperature
+Kitchen: 
+  name: Kitchen
+#  control: hidden
+  entities:
+    - switch.Kitchen
 Bedroom: 
   name: Bed Room
 #  control: hidden
   entities:
     - sensor.broadlink_sensor_temperature
-    - switch.sonoff
+    - switch.sonoff2
+    - switch.sonoff3
+    - switch.sonoff4
 Rooms:
   view: yes
   name: Rooms
   entities:
     - group.living_room
     - group.bedroom
-
+    - group.kitchen
 
 #living_room:
 #  name: Living Room
