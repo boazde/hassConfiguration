@@ -1,0 +1,13 @@
+
+
+sudo su -s /bin/bash homeassistant
+source /srv/homeassistant/bin/activate
+
+#Check Configuration
+hass --script check_config
+
+#Auto start
+sudo systemctl start home-assistant@homeassistant
+sudo systemctl stop home-assistant@homeassistant
+sudo systemctl disable home-assistant@homeassistant
+sudo systemctl enable home-assistant@homeassistant
