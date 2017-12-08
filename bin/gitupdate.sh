@@ -1,5 +1,5 @@
-cd /home/boazde/.homeassistant
-source /srv/boazde/homeassistant/bin/activate
+cd /home/homeassistant/.homeassistant
+source /srv/homeassistant/bin/activate
 hass --script check_config
 
 git add .
