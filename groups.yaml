@@ -3,9 +3,9 @@ Living Room:
   name: Living Room
 #  control: hidden
   entities:
-    - switch.electra_aircon
+    - switch.AC
     - switch.Samsung_Tv
-    - switch.Yamaha
+    - switch.Yamaha_IR
     - media_player.yamaha
     - light.corner_lamp
     - sensor.temperature
