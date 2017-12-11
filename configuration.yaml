@@ -51,9 +51,16 @@ logbook:
 # Track the sun
 sun:
 
-# Amzon Alexa
-emulated_hue:
 
+#Amazon Alexa
+emulated_hue:
+  type: google_home
+  listen_port: 80
+
+# Google home 
+emulated_hue 1:
+  type: alexa
+#  listen_port: 80
 
 #python_script:
 # Weather prediction
