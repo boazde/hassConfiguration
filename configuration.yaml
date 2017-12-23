@@ -56,6 +56,18 @@ sun:
 emulated_hue:
   listen_port: 80
 
+
+telegram_bot:
+  - platform: polling
+    api_key: !secret telegram_bot_api
+    allowed_chat_ids:
+      - !secret telegram_bot_chat_ID 
+
+notify:
+  - name: hass_telegram
+    platform: telegram
+    chat_id: !secret telegram_bot_chat_ID
+
 #python_script:
 # Weather prediction
 #sensor:
