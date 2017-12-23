@@ -2,7 +2,7 @@
 - platform: nmap_tracker
   hosts: !secret nmap_tracker_host
 
-- platform: netgear
-  host: !secret netgear_tracker_host
-  username: !secret netgear_tracker_username
-  password: !secret netgear_tracker_password
+#- platform: netgear
+  #host: !secret netgear_tracker_host
+  #username: !secret netgear_tracker_username
+  #password: !secret netgear_tracker_password
