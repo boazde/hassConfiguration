@@ -18,6 +18,14 @@ homeassistant:
 # Enables the frontend
 frontend:
 
+# Custom UI Panels
+panel_custom:
+  - name: floorplan
+    sidebar_title: Floorplan
+    sidebar_icon: mdi:floor-plan
+    url_path: floorplan
+    config: !include config/floorplan.yaml
+    
 # Enables configuration UI
 config:
 

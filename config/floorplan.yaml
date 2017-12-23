@@ -1,0 +1,76 @@
+      name: Floorplan
+      image: /local/custom_ui/floorplan/floorplan.svg
+      stylesheet: /local/custom_ui/floorplan/floorplan.css
+
+
+      groups:
+        - name: Lights
+          entities:
+            - switch.Kitchen
+            - light.corner_lamp
+          states:
+            - state: 'on'
+              class: 'light-on'
+            - state: 'off'
+              class: 'light-off'
+          action:
+            domain: homeassistant
+            service: toggle
+
+        - name: Media Players
+          entities:
+            - media_player.yamaha
+            #- media_player.vlc_tts
+          states:
+            - state: 'idle'
+              class: 'media-idle'
+            - state: 'unknown'
+              clsss: 'media-idle'
+            - state: 'off'
+              class: 'media-idle'
+            - state: 'playing'
+              class: 'media-playing'
+            - state: 'paused'
+              class: 'media-paused'
+
+        - name: Switches
+          entities:
+            - switch.sonoff2
+            - switch.sonoff3
+            - switch.sonoff4
+          states:
+            - state: 'on'
+              class: 'switch-on'
+            - state: 'off'
+              class: 'switch-off'
+          action:
+            domain: homeassistant
+            service: toggle
+
+        - name: Fans
+          entities:
+            - switch.ac_cold
+            - switch.ac_hot
+            - switch.ac_fan
+          states:
+            - state: 'on'
+              class: 'fan-on'
+            - state: 'off'
+              class: 'fan-off'
+          action:
+            domain: homeassistant
+            service: toggle
+
+        - name: Camera Buttons
+          entities:
+             - camera.car_location
+
+        - name: Time
+          entities:
+            - sensor.time
+          class_template: 'return "text-time";'
+        - name: Text Day and Weather
+          entities:
+            - sensor.friendly_date_day
+            - sensor.alarm_time
+          class_template: 'return "text-subheading";'
