@@ -14,9 +14,6 @@
     -  service: homeassistant.turn_off
        entity_id:
          - switch.sonoff3
-    -  service: persistent_notification.create
-       data:
-         message: "Media Player stopped"
     -  service: notify.hass_telegram
        data:
          message: 'Hi, Media Player Was Stopped.'
@@ -33,9 +30,6 @@
     -  service: homeassistant.turn_on
        entity_id:
          - switch.sonoff3
-    -  service: persistent_notification.create
-       data:
-         message: "Media Player Turned on"
     -  service: notify.hass_telegram
        data:
          message: 'Hi, Media Player was turned on.'
