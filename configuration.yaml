@@ -54,13 +54,7 @@ sun:
 
 #Amazon Alexa
 emulated_hue:
-  type: google_home
   listen_port: 80
-
-# Google home 
-emulated_hue 1:
-  type: alexa
-#  listen_port: 80
 
 #python_script:
 # Weather prediction
@@ -71,7 +65,16 @@ emulated_hue 1:
 #    name: Weather
 #    woeid: !secret yahoo_woeid
 
-
+#google_assistant:
+  #project_id: hass
+  #client_id: !secret assistant_client_id
+  #access_token: !secret assistant_access_token
+  #agent_user_id: !secret assistant_user_id 
+  #api_key: !secret assistant_access_api
+  #exposed_domains:
+    #- switch
+    #- light
+    #- group
 
 #myqtt:
 
@@ -86,7 +89,7 @@ tts:
 #                                                  #
 ####################################################
 
-automation: !include automations.yaml
+automation: !include_dir_merge_list automation
 zone: !include zones.yaml
 sensor: !include sensors.yaml
 switch: !include switches.yaml
