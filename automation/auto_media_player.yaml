@@ -1,0 +1,42 @@
+
+######################################################################
+##  Media Player triggers 
+######################################################################
+
+- alias: "Media player paused/stopped"
+  trigger:
+    - platform: state
+      entity_id: media_player.yamaha
+      from: 'playing'
+      to: 'idle'
+
+  action:
+    -  service: homeassistant.turn_off
+       entity_id:
+         - switch.sonoff3
+    -  service: persistent_notification.create
+       data:
+         message: "Media Player stopped"
+    -  service: notify.hass_telegram
+       data:
+         message: 'Hi, Media Player Was Stopped.'
+
+
+- alias: "Media player turned on"
+  trigger:
+    - platform: state
+      entity_id: media_player.yamaha
+      from: 'idle'
+      to: 'playing'
+
+  action:
+    -  service: homeassistant.turn_on
+       entity_id:
+         - switch.sonoff3
+    -  service: persistent_notification.create
+       data:
+         message: "Media Player Turned on"
+    -  service: notify.hass_telegram
+       data:
+         message: 'Hi, Media Player was turned on.'
+
