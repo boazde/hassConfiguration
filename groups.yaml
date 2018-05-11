@@ -16,7 +16,7 @@ Kitchen:
   name: Kitchen
 #  control: hidden
   entities:
-    - switch.Kitchen light
+    - switch.Kitchen
 Bedroom: 
   name: Bed Room
 #  control: hidden
