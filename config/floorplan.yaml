@@ -7,7 +7,7 @@
         - name: Lights
           entities:
             - switch.Kitchen
-            - light.corner_lamp
+            - light.corner_light
           states:
             - state: 'on'
               class: 'light-on'
