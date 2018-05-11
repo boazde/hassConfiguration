@@ -9,8 +9,8 @@ Living Room:
     - switch.Samsung_Tv
     - switch.Yamaha_IR
     - media_player.yamaha
-    - light.corner_light
-    - light.hall_light
+    - light.Corner_light
+    - light.Hall_light
     - sensor.temperature
 Kitchen: 
   name: Kitchen

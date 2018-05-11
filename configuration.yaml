@@ -10,7 +10,8 @@ homeassistant:
   unit_system: metric
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: !secret time_zone_home
-
+  # Customization file
+  customize: !include customize.yaml
 
 # Show links to resources in log and frontend
 #introduction:
@@ -31,9 +32,9 @@ panel_custom:
 config:
 
 http:
-  # Uncomment this to add a password (recommended!)
+  # Secrets are defined in the file secrets.yaml
   api_password: !secret http_password
-#Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
   # base_url: example.duckdns.org:8123
 
 # Checks for available updates
@@ -57,6 +58,9 @@ history:
 # View all events in a logbook
 logbook:
 
+# Enables a map showing the location of tracked devices
+map:
+
 # Track the sun
 sun:
 
@@ -65,6 +69,8 @@ sun:
 emulated_hue:
   listen_port: 80
 
+media_player:
+  - platform: yamaha
 
 telegram_bot:
   - platform: polling
@@ -103,6 +109,9 @@ notify:
 # Text to speech
 tts:
   - platform: google
+
+# Cloud
+cloud:
 
 ####################################################
 #                                                  #
