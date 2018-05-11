@@ -67,8 +67,7 @@ sun:
 
 #Amazon Alexa
 emulated_hue:
-  listen_port: 80
-
+  
 media_player:
   - platform: yamaha
 
