@@ -8,8 +8,6 @@ Living Room:
     - switch.ac_fan
     - switch.Samsung_Tv
     - switch.Yamaha_IR
-    - switch.living_room_light_left
-    - switch.living_room_light_right
     - media_player.yamaha
     - light.Corner_light
     - light.Hall_light
