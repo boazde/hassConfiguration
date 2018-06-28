@@ -35,8 +35,8 @@
       command_off: 'sgY0AAwhIwsMIgwhIwwjCyMLDSEMIgwhIwsMIQwhDAABVCMLIgsjCyMLIwsjCwwhIwsMISMLIwsAAAAA'
     living_room_light_right:
       friendly_name: "Salon light right"
-      command_on: 'sgY0AAwhIwsMIgwhIwwjCyMLDSEMIgwhIwsMIQwhDAABVCMLIgsjCyMLIwsjCwwhIwsMISMLIwsAAAAA'
-      command_off: 'sgY0AAwhIwsMIgwhIwwjCyMLDSEMIgwhIwsMIQwhDAABVCMLIgsjCyMLIwsjCwwhIwsMISMLIwsAAAAA'
+      command_on: 'sgCmACILIgoiCwwgDCAiCwshDCAMIAwAAVMiCyELIgsiCyIKIwoMICILDCAiCyILCyEiCgwhCyEiCyIKIwoMIAwhIgoMIAwhCyELAAFTIgsiCyILIgoiCyILCyEiCgwhIgsiCgwgIwoMIAwhIgoiCyILDCAMICILDCAMIAwgDAABUyMKIgsiCyILIQsiCwwgIgsLISILIgsLISILCyELISILIgsiCgwABdwAAA'
+      command_off: 'sgCmACILIgoiCwwgDCAiCwshDCAMIAwAAVMiCyELIgsiCyIKIwoMICILDCAiCyILCyEiCgwhCyEiCyIKIwoMIAwhIgoMIAwhCyELAAFTIgsiCyILIgoiCyILCyEiCgwhIgsiCgwgIwoMIAwhIgoiCyILDCAMICILDCAMIAwgDAABUyMKIgsiCyILIQsiCwwgIgsLISILIgsLISILCyELISILIgsiCgwABdwAAA'
 
 - platform: broadlink
   host: !secret sonoff_rm_basic_IP
