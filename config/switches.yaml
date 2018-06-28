@@ -35,8 +35,8 @@
       command_off: 'sgY0AAwhIwsMIgwhIwwjCyMLDSEMIgwhIwsMIQwhDAABVCMLIgsjCyMLIwsjCwwhIwsMISMLIwsAAAAA'
     lr_light2:
       friendly_name: "Salon center"
-      command_on: 'sgCmACILIgoiCwwgDCAiCwshDCAMIAwAAVMiCyELIgsiCyIKIwoMICILDCAiCyILCyEiCgwhCyEiCyIKIwoMIAwhIgoMIAwhCyELAAFTIgsiCyILIgoiCyILCyEiCgwhIgsiCgwgIwoMIAwhIgoiCyILDCAMICILDCAMIAwgDAABUyMKIgsiCyILIQsiCwwgIgsLISILIgsLISILCyELISILIgsiCgwABdwAAA'
-      command_off: 'sgCmACILIgoiCwwgDCAiCwshDCAMIAwAAVMiCyELIgsiCyIKIwoMICILDCAiCyILCyEiCgwhCyEiCyIKIwoMIAwhIgoMIAwhCyELAAFTIgsiCyILIgoiCyILCyEiCgwhIgsiCgwgIwoMIAwhIgoiCyILDCAMICILDCAMIAwgDAABUyMKIgsiCyILIQsiCwwgIgsLISILIgsLISILCyELISILIgsiCgwABdwAAA'
+      command_on: 'sgY0AAwhIwsMIgwhIwwjCyMLDSEMIgwhIwsMIQwhDAABVCMLIgsjCyMLIwsjCwwhIwsMISMLIwsAAAAA'
+      command_off: 'sgY0AAwhIwsMIgwhIwwjCyMLDSEMIgwhIwsMIQwhDAABVCMLIgsjCyMLIwsjCwwhIwsMISMLIwsAAAAA'
 
 - platform: broadlink
   host: !secret sonoff_rm_basic_IP
