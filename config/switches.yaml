@@ -29,7 +29,14 @@
       friendly_name: "Yamaha IR"
       command_on: 'JgBgAAABKJIUERQ2FDUVNRU1FTUUNhQRFDYUERQRFBEUERQRFBEUNhQRFDYUERQ2FBEUNhQRFBEUNhQRFDUVEBU1FRAVNRQ2FAAFFgABKEgVAAxOAAEoSBUADE4AAShIFAANBQAAAAAAAAAA'
       command_off: 'JgBgAAABKJIUERQ2FDUVNRU1FTUUNhQRFDYUERQRFBEUERQRFBEUNhQRFDYUERQ2FBEUNhQRFBEUNhQRFDUVEBU1FRAVNRQ2FAAFFgABKEgVAAxOAAEoSBUADE4AAShIFAANBQAAAAAAAAAA'
-
+    living_room_light_left:
+      friendly_name: "Salon light left"
+      command_on: 'sgY0AAwhIwsMIgwhIwwjCyMLDSEMIgwhIwsMIQwhDAABVCMLIgsjCyMLIwsjCwwhIwsMISMLIwsAAAAA'
+      command_off: 'sgY0AAwhIwsMIgwhIwwjCyMLDSEMIgwhIwsMIQwhDAABVCMLIgsjCyMLIwsjCwwhIwsMISMLIwsAAAAA'
+    living_room_light_right:
+      friendly_name: "Salon light right"
+      command_on: 'sgY0AAwhIwsMIgwhIwwjCyMLDSEMIgwhIwsMIQwhDAABVCMLIgsjCyMLIwsjCwwhIwsMISMLIwsAAAAA'
+      command_off: 'sgY0AAwhIwsMIgwhIwwjCyMLDSEMIgwhIwsMIQwhDAABVCMLIgsjCyMLIwsjCwwhIwsMISMLIwsAAAAA'
 
 - platform: broadlink
   host: !secret sonoff_rm_basic_IP
