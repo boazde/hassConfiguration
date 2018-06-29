@@ -119,12 +119,13 @@ cloud:
 ####################################################
 
 automation: !include_dir_merge_list automation
+script: !include_dir_merge_list scripts
 zone: !include config/zones.yaml
 sensor: !include config/sensors.yaml
 switch: !include config/switches.yaml
 #device_tracker: !include config/device_tracker.yaml
 light: !include config/lights.yaml
-script: !include scripts.yaml
+
 group: !include groups.yaml
 
 #AC configuration 
