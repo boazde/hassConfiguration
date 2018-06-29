@@ -21,20 +21,25 @@
 
 # Friendly Date
 
-- platform: template
-  sensors:
-    friendly_date:
-      # Thursday June 10th, 2017
-      friendly_name: "Today's Date"
-      value_template: "{{ now().strftime('%A %B %e, %Y') }}"
-    friendly_date_day:
-      # Thu
-      friendly_name: "Today's Day"
-      value_template: "{{ now().strftime('%a') }}"
+# - platform: template
+#   sensors:
+#     friendly_date:
+#       # Thursday June 10th, 2017
+#       friendly_name: "Today's Date"
+#       value_template: "{{ now().strftime('%A %B %e, %Y') }}"
+#     friendly_date_day:
+#       # Thu
+#       friendly_name: "Today's Day"
+#       value_template: "{{ now().strftime('%a') }}"
 
 # For Alarm Clock
+#- platform: template
+#  sensors:
+#    alarm_time:
+#      friendly_name: 'Time'
+#      value_template: '{{ "%0.02d:%0.02d" | format(states("input_slider.alarmhour") | int, states("input_slider.alarmminutes") | int) }}'
+
 - platform: template
   sensors:
-    alarm_time:
-      friendly_name: 'Time'
-      value_template: '{{ "%0.02d:%0.02d" | format(states("input_slider.alarmhour") | int, states("input_slider.alarmminutes") | int) }}'
+    lr_ac_temp_sensor:
+      value_template: "{{ states.input_text.lr_ac_temp_text.state }}"

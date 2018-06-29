@@ -1,0 +1,4 @@
+#### input_boolean.yaml ####
+lr_ac_status:
+  name: "lr_ac_status"
+  initial: off

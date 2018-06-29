@@ -1,0 +1,18 @@
+input_boolean.lr_ac_status:
+  friendly_name: "Status"
+  icon: mdi:air-conditioner
+sensor.lr_ac_temp_sensor:
+  friendly_name: "Current Temperature"
+  icon: mdi:thermometer
+cover.lr_ac_temp_cover:
+  friendly_name: "Change Temperature"
+  icon: mdi:temperature-celsius
+input_select.lr_ac_mode:
+  friendly_name: "Mode"
+  icon: mdi:weather-windy-variant
+input_select.lr_ac_fan:
+  friendly_name: "Fan"
+  icon: mdi:fan
+group.living_room_ac:
+  friendly_name: "Living Room AC"
+  control: hidden

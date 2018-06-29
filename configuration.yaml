@@ -127,10 +127,16 @@ light: !include config/lights.yaml
 script: !include scripts.yaml
 group: !include groups.yaml
 
+#AC configuration 
+logger: !include logger.yaml
+input_boolean: !include config/input_boolean.yaml
+input_select: !include config/input_select.yaml
+input_text: !include config/input_text.yaml
+cover: !include config/covers.yaml
+
 #camera: !include camera.yaml
 #history: !include history.yaml
 #logbook: !include logbook.yaml
-logger: !include logger.yaml
 #mqtt: !include mqtt.yaml
 #panel_iframe: !include iframe.yaml
 #recorder: !include recorder.yaml

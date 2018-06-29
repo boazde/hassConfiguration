@@ -34,7 +34,14 @@ Rooms:
     - group.living_room
     - group.bedroom
     - group.kitchen
-
+living_room_ac:
+  name: living_room_ac
+  entities:
+   - input_boolean.lr_ac_status
+   - sensor.lr_ac_temp_sensor
+   - cover.lr_ac_temp_cover
+   - input_select.lr_ac_mode
+   - input_select.lr_ac_fan
 #living_room:
 #  name: Living Room
 #  - switch.electra_aircon

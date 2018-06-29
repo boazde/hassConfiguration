@@ -1,0 +1,13 @@
+#### input_select.yaml ####
+lr_ac_fan:
+  name: lr_ac_fan
+  options:
+   - LOW
+   - MED
+   - HIGH
+   - AUTO
+lr_ac_mode:
+  name: lr_ac_mode
+  options:
+   - COOL
+   - HEAT
