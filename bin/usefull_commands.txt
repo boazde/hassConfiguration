@@ -40,3 +40,5 @@ ExecStart=/srv/homeassistant/bin/hass
 
 [Install]
 WantedBy=multi-user.target
+
+python.exe -m pip install -r requirements_all.txt
