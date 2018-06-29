@@ -9,8 +9,8 @@ Living Room:
     - switch.Samsung_Tv
     - switch.Yamaha_IR
     - media_player.yamaha
-    - light.lr_light1
-    - light.lr_light2
+    - switch.lr_light1
+    - switch.lr_light2
     - light.Corner_light
     - light.Hall_light
     - sensor.temperature
