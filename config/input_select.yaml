@@ -11,3 +11,4 @@ lr_ac_mode:
   options:
    - COOL
    - HEAT
+   - FAN

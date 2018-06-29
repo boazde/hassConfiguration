@@ -1,6 +1,6 @@
 living_room_rm_pro_send_packet:
   sequence:
-    - service: broadlink.send_packet_192_168_1_9
+    - service: switch.broadlink_send_packet_192_168_1_9
       data_template:
         packet:
          - '{{ packet_code }}'

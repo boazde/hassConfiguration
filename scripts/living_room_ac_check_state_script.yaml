@@ -13,6 +13,12 @@ living_room_ac_check_state_script:
           {% elif (selected_fan.lower() == "high") %} script.living_room_ac_heat_high_script
           {% elif (selected_fan.lower() == "auto") %} script.living_room_ac_heat_auto_script
           {% endif %}
+        {%-elif (selected_mode.lower() == "fan") %}
+          {% if (selected_fan.lower() == "low") %} script.living_room_ac_fan_low_script
+          {% elif (selected_fan.lower() == "med") %} script.living_room_ac_fan_med_script
+          {% elif (selected_fan.lower() == "high") %} script.living_room_ac_fan_high_script
+          {% elif (selected_fan.lower() == "auto") %} script.living_room_ac_fan_auto_script
+          {% endif %}          
         {% endif %}
       data_template:
         selected_temp: '{{ selected_temp }}'
