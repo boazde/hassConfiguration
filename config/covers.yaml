@@ -7,7 +7,7 @@
         service: input_text.set_value
         data_template:
           entity_id: input_text.lr_ac_temp_text
-          value: "{{ [((states.input_text.lr_ac_temp_text.state | int) + 1), 32] | min }}"
+          value: "{{ [((states.input_text.lr_ac_temp_text.state | int) + 1), 30] | min }}"
       close_cover:
         service: input_text.set_value
         data_template:

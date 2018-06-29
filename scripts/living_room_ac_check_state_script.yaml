@@ -1,0 +1,18 @@
+living_room_ac_check_state_script:
+  sequence:
+    - service_template: >
+       {% if (selected_mode.lower() == "cool") %}
+          {% if (selected_fan.lower() == "low") %} script.living_room_ac_cool_low_script
+          {% elif (selected_fan.lower() == "med") %} script.living_room_ac_cool_med_script
+          {% elif (selected_fan.lower() == "high") %} script.living_room_ac_cool_high_script
+          {% elif (selected_fan.lower() == "auto") %} script.living_room_ac_cool_auto_script
+          {% endif %}
+        {%-elif (selected_mode.lower() == "heat") %}
+          {% if (selected_fan.lower() == "low") %} script.living_room_ac_heat_low_script
+          {% elif (selected_fan.lower() == "med") %} script.living_room_ac_heat_med_script
+          {% elif (selected_fan.lower() == "high") %} script.living_room_ac_heat_high_script
+          {% elif (selected_fan.lower() == "auto") %} script.living_room_ac_heat_auto_script
+          {% endif %}
+        {% endif %}
+      data_template:
+        selected_temp: '{{ selected_temp }}'

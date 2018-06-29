@@ -1,0 +1,43 @@
+- id: lr_ac_status_on
+  alias: lr_ac_status_on
+  trigger:
+    platform: state
+    entity_id: input_boolean.lr_ac_status
+    to: 'on'
+  action:
+    service: script.living_room_ac_check_state_script
+    data_template:
+      selected_mode: '{{ states.input_select.lr_ac_mode.state }}'
+      selected_fan: '{{ states.input_select.lr_ac_fan.state }}'
+      selected_temp: '{{ states.sensor.lr_ac_temp_sensor.state }}'
+
+- id: lr_ac_status_off
+  alias: lr_ac_status_off
+  trigger:
+    platform: state
+    entity_id: input_boolean.lr_ac_status
+    to: 'off'
+  action:
+    service: script.living_room_rm_pro_send_packet
+    data:
+      packet_code:
+       - "Place the ir packet for OFF here"
+
+- id: lr_ac_changes
+  alias: lr_ac_changes
+  trigger:
+    - platform: state
+      entity_id: sensor.lr_ac_temp_sensor
+    - platform: state
+      entity_id: input_select.lr_ac_mode
+    - platform: state
+      entity_id: input_select.lr_ac_fan
+  action:
+    - condition: state
+      entity_id: input_boolean.lr_ac_status
+      state: 'on'
+    - service: script.living_room_ac_check_state_script
+      data_template:
+        selected_mode: '{{ states.input_select.lr_ac_mode.state }}'
+        selected_fan: '{{ states.input_select.lr_ac_fan.state }}'
+        selected_temp: '{{ states.sensor.lr_ac_temp_sensor.state }}'
