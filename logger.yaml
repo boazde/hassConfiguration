@@ -1,1 +1,11 @@
-  default: critical
+default: warning
+logs:
+  homeassistant.components.switch: debug
+  homeassistant.components.input_select: debug
+  homeassistant.components.input_boolean: debug
+  homeassistant.components.input_text: debug
+  homeassistant.components.cover: debug
+  homeassistant.components.sensor: debug
+  homeassistant.components.group: debug
+  homeassistant.components.automation: debug
+  homeassistant.components.script: debug
