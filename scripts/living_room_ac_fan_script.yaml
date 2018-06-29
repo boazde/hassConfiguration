@@ -1,4 +1,4 @@
-living_room_ac_cool_low_script:
+living_room_ac_fan_low_script:
   sequence:
     - service: script.living_room_rm_pro_send_packet
       data_template:
@@ -21,7 +21,7 @@ living_room_ac_cool_low_script:
           {% endif %}          
           
           
-living_room_ac_cool_med_script:
+living_room_ac_fan_med_script:
   sequence:
     - service: script.living_room_rm_pro_send_packet
       data_template:
@@ -43,7 +43,7 @@ living_room_ac_cool_med_script:
           {% elif (selected_temp == "30") %} "JgCyAGVgIj5BP0E9Qh8gHyEfIB8hPkEeIT9BHyEfIB8hHyAfIR8gHyEfIR4hHyEfIR4iHyEdIR8iHyA/QCBhYSE/QD9APkEfIR8iHSIfID9BHyA/QB8iHSEfIR8hHyEfIB8gHyEfIR8gHyEeIx0iHyAeIR8hP0EfYmAhPkE+P0FBHyAfIR8hHyA/QR8hPUEfISAgHiEfIR8hHyEfIB8eISEgIB8eISEfIR8hHiEgHz9BH4AADQUAAAAAAAA="
           {% endif %}                         
 
-living_room_ac_cool_high_script:
+living_room_ac_fan_high_script:
   sequence:
     - service: script.living_room_rm_pro_send_packet
       data_template:
@@ -65,7 +65,7 @@ living_room_ac_cool_high_script:
           {% elif (selected_temp == "30") %} "JgC4AGVgIT5BPiEfQB8hICAfIR8fICE/QB4fQUAfIh4hHyEeISAhHSEfIh4fICIfICAgHyEeIR8hHiEfIj1CHmJgIT9CPR8hPyAiHyAfIR8gHyA/Qh4gP0EfHiEiHiEgIB8hHx8fIh8gHyEfIR8gHyEeIh8gHiEfIT9AH2NhIT1BPyEePyEhHx4hIR8hHyE+PiEhP0EfHiAhHyIfIR4hHyAgHx8iHx4hHyAiHyAgHiAiHyAfHkFAH4EADQU="
           {% endif %}
 
-living_room_ac_cool_auto_script:
+living_room_ac_fan_auto_script:
   sequence:
     - service: script.living_room_rm_pro_send_packet
       data_template:
