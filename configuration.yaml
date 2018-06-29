@@ -119,7 +119,8 @@ cloud:
 ####################################################
 
 automation: !include_dir_merge_list automation
-script: !include_dir_merge_list scripts
+script: !include_dir_merge_named scripts
+#script: !include scripts/scripts.yaml
 zone: !include config/zones.yaml
 sensor: !include config/sensors.yaml
 switch: !include config/switches.yaml
