@@ -25,7 +25,7 @@ Bedroom:
   entities:
     - sensor.broadlink_sensor_temperature
     - switch.bed_light
-    - switch.fan
+    - switch.bed_fan
     - switch.sonoff2
     - switch.sonoff3
     - switch.sonoff4
