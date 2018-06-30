@@ -44,21 +44,22 @@ living_room_ac:
    - input_select.lr_ac_mode
    - input_select.lr_ac_fan
 
+configurations:
+  view: yes
+  name: Config
+  entities:
+    - script.get_latest_config
+    - script.update_hass
+    - script.update_os
+    - script.update_all
+
 Israeli Radio:
   name: Israeli Radio
   entities:
     - input_select.radio_station
     - input_select.chromecast_radio
     - script.ilradio
-#living_room:
-#  name: Living Room
-#  - switch.electra_aircon
-#  - switch.Samsung_Tv
-#  - switch.Yamaha
-#  - media_player.yamaha
-#  - switch.sonoff
-#  - light.table_lamp
-#  - sensor.temperature
+
 #bedroom:
 #  - sensor.broadlink_sensor_temperature
 #    - light.bedroom
