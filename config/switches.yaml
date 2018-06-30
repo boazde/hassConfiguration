@@ -37,8 +37,14 @@
       friendly_name: "Center Light"
       command_on: 'sgDAACELIgoMIQsgDCELIQshIQsMAAFTIQsiCiILIgoiCyIKDCAiCwshIgoiCwshIQsLIQwgIgshCyILCyELIQshCyELISIKDAABUyILIQsiCiILIQsiCwshIgoMISELIQsMICILCyELISILIQsiCgwhCyELIQshCyEhCwwAAVMiCyELIgoiCyILIQsLISIKDCEhCyILCyEhCwshCyEiCyELIgsLIQshCyEMIAshIgsLAAFUIQsiCyELIgoiCyILCAAF3AAAAAAAAAAA'
       command_off: 'sgDAACELIgoMIQsgDCELIQshIQsMAAFTIQsiCiILIgoiCyIKDCAiCwshIgoiCwshIQsLIQwgIgshCyILCyELIQshCyELISIKDAABUyILIQsiCiILIQsiCwshIgoMISELIQsMICILCyELISILIQsiCgwhCyELIQshCyEhCwwAAVMiCyELIgoiCyILIQsLISIKDCEhCyILCyEhCwshCyEiCyELIgsLIQshCyEMIAshIgsLAAFUIQsiCyELIgoiCyILCAAF3AAAAAAAAAAA'      
-
-
+    bed_light:
+      friendly_name: "Bed light"
+      command_on: 'sgc0AA4YDhkOGA4MGwwbGA4MGhkOGA4YDxgOGA4YDgwaDBoYDgwaDBsMGxgODBoMGwwbDBsAAVoAAAAA'
+      command_off: 'sgCiABkMGgABWg0YDRgOFw4LGgwZGA4LGhcOFw4YDRgOFw4XDgsaDBkYDhcOGA0YDQwaCxoLGgsbCxoAAVkOFw4YDRgOCxoLGhgNCxoYDRgOFw4YDRgNGA4LGgsaGA0YDRgOGA0LGgsbCxoLGgsaAAFXDhcOGA0YDQwaCxoXDgwZGA0YDhcOFw4YDRgNDBoLGhgNGA4XDhcOCxoLGwsaCxoLGgAF3AAAAAAAAA=='      
+    bed_fan:
+      friendly_name: "Bed fan"
+      command_on: 'sgU0AA4YDhgOGA4MGwwbGA4MGhgOGA4YDhgOGQ4YDgwbDBsYDgwbGA4MGwwaDBoMGgwbDBsAAVoAAAAA'
+      command_off: 'sgY0AA4ZDhkOGA4MGwwbGA4MGhgOGQ4YDhgOGA4YDgwbDBoYDhgODBsMGxgODBoMGwwbDBoAAVoAAAAA'      
 - platform: broadlink
   host: !secret sonoff_rm_basic_IP
   mac: !secret sonoff_rm_basic_IP
