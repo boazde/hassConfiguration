@@ -18,7 +18,12 @@
   time_zone: America/New_York
   name: 'Ann Arbor'
 
-
+- platform: speedtest
+  minute: 59
+  monitored_conditions:
+    - ping
+    - download
+    - upload
 # Friendly Date
 
 # - platform: template
