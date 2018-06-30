@@ -34,6 +34,7 @@ Rooms:
     - group.living_room
     - group.bedroom
     - group.kitchen
+
 living_room_ac:
   name: living_room_ac
   entities:
@@ -42,6 +43,13 @@ living_room_ac:
    - cover.lr_ac_temp_cover
    - input_select.lr_ac_mode
    - input_select.lr_ac_fan
+
+Israeli Radio:
+  name: Israeli Radio
+  entities:
+    - input_select.radio_station
+    - input_select.chromecast_radio
+    - script.ilradio
 #living_room:
 #  name: Living Room
 #  - switch.electra_aircon

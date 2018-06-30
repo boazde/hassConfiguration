@@ -70,7 +70,9 @@ emulated_hue:
   
 media_player:
   - platform: yamaha
+  - platform: cast
 
+  
 telegram_bot:
   - platform: polling
     api_key: !secret telegram_bot_api

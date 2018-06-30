@@ -16,3 +16,7 @@ input_select.lr_ac_fan:
 group.living_room_ac:
   friendly_name: "Living Room AC"
   control: hidden
+
+script.ilradio:
+    friendly_name: Start Playing
+    icon: mdi:play
