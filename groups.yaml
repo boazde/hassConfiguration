@@ -20,6 +20,7 @@ Bedroom:
 #  control: hidden
   entities:
     - sensor.broadlink_sensor_temperature
+    - switch.bed_main
     - switch.bed_light
     - switch.bed_fan
 

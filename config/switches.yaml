@@ -44,7 +44,12 @@
     bed_fan:
       friendly_name: "Bed fan"
       command_on: 'sgU0AA4YDhgOGA4MGwwbGA4MGhgOGA4YDhgOGQ4YDgwbDBsYDgwbGA4MGwwaDBoMGgwbDBsAAVoAAAAA'
-      command_off: 'sgY0AA4ZDhkOGA4MGwwbGA4MGhgOGQ4YDhgOGA4YDgwbDBoYDhgODBsMGxgODBoMGwwbDBoAAVoAAAAA'      
+      command_off: 'sgY0AA4ZDhkOGA4MGwwbGA4MGhgOGQ4YDhgOGA4YDgwbDBoYDhgODBsMGxgODBoMGwwbDBoAAVoAAAAA'     
+    bed_main:
+      friendly_name: "Bed main"
+      command_on: 'sgc0AAsdHgoLHQsdCx0eCQsdCx0LHQsdCx0fCh8KCx0eCgsdHgoLHQsdCwABKgsdHgofCgsdCx0AAAAA'
+      command_off: 'sgc0AAsdHgoLHQsdCx0eCQsdCx0LHQsdCx0fCh8KCx0eCgsdHgoLHQsdCwABKgsdHgofCgsdCx0AAAAA'     
+       
 - platform: broadlink
   host: !secret sonoff_rm_basic_IP
   mac: !secret sonoff_rm_basic_IP
