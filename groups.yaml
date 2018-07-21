@@ -3,9 +3,6 @@ Living Room:
   name: Living Room
 #  control: hidden
   entities:
-    - switch.ac_cold
-    - switch.ac_hot
-    - switch.ac_fan
     - switch.Samsung_Tv
     - switch.Yamaha_IR
     - media_player.yamaha
@@ -25,19 +22,22 @@ Bedroom:
     - sensor.broadlink_sensor_temperature
     - switch.bed_light
     - switch.bed_fan
-    - switch.sonoff3
-    - switch.sonoff4
+
 Rooms:
   view: yes
   name: Rooms
   entities:
     - group.living_room
+    - group.living_room_ac
     - group.bedroom
     - group.kitchen
 
 living_room_ac:
   name: living_room_ac
   entities:
+   - switch.ac_cold
+   - switch.ac_hot
+   - switch.ac_fan
    - input_boolean.lr_ac_status
    - sensor.lr_ac_temp_sensor
    - cover.lr_ac_temp_cover
