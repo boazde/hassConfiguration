@@ -3,8 +3,9 @@
 Steps for Installing Home Assitant on Rpi with raspbian
 1. Download RASPBIAN STRETCH LITE from https://www.raspberrypi.org/downloads/raspbian/
 2. Download Etcher from https://etcher.io/
-3. Download putty  https://www.putty.org/
-4. Check the manual installation at https://www.home-assistant.io/docs/installation/raspberry-pi/
+3. Enable the SSH by placing a file named ssh, without any extension, onto the boot partition of the SD card.
+4. Download putty  https://www.putty.org/
+5. Check the manual installation at https://www.home-assistant.io/docs/installation/raspberry-pi/
 ```
   ssh pi@ipaddress
   $ passwd
