@@ -5,6 +5,7 @@ Steps for Installing Home Assitant on Rpi with raspbian
 2. Download Etcher from https://etcher.io/
 3. Download putty  https://www.putty.org/
 4. Check the manual installation at https://www.home-assistant.io/docs/installation/raspberry-pi/
+```
   ssh pi@ipaddress
   $ passwd
   $ sudo apt-get update
@@ -21,6 +22,7 @@ Steps for Installing Home Assitant on Rpi with raspbian
   (homeassistant) homeassistant@raspberrypi:/srv/homeassistant $ python3 -m pip install wheel
   (homeassistant) homeassistant@raspberrypi:/srv/homeassistant $ pip3 install homeassistant
   (homeassistant) $ hass
+```
   You can now reach your installation on your Raspberry Pi over the web interface on http://ipaddress:8123.
   
   If Home Assistant install is not located at /srv/homeassistant, please modify the ExecStart= line appropriately.
@@ -37,4 +39,4 @@ Steps for Installing Home Assitant on Rpi with raspbian
     [Install]
     WantedBy=multi-user.target
 
-  sudo systemctl enable home-assistant@homeassistant
+  $ sudo systemctl enable home-assistant@homeassistant
