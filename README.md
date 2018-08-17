@@ -43,3 +43,12 @@ To have Home Assistant start automatically at boot, enable the service.
 ```
 $ sudo systemctl enable home-assistant@homeassistant
 ```
+
+Now the Home Assistant is ready and in order to have this configuration it is needed to follow the next steps:
+```
+cd /srv/homeassistant
+git clone 
+
+```
+
+
