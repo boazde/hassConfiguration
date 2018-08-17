@@ -24,9 +24,12 @@ Steps for Installing Home Assitant on Rpi with raspbian
   (homeassistant) homeassistant@raspberrypi:/srv/homeassistant $ pip3 install homeassistant
   (homeassistant) $ hass
 ```
-  You can now reach your installation on your Raspberry Pi over the web interface on http://ipaddress:8123.
+    You can now reach your installation on your Raspberry Pi over the web interface on http://ipaddress:8123.
   
-  If Home Assistant install is not located at /srv/homeassistant, please modify the ExecStart= line appropriately.
+  For Auto start Run 
+  ```
+  sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service
+  ```
 
     [Unit]
     Description=Home Assistant
