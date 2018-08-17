@@ -41,13 +41,15 @@ Steps for Installing Home Assitant on Rpi with raspbian
 To have Home Assistant start automatically at boot, enable the service.
 
 ```
+sudo systemctl --system daemon-reload
 $ sudo systemctl enable home-assistant@homeassistant
 ```
 
 Now the Home Assistant is ready and in order to have this configuration it is needed to follow the next steps:
 ```
-cd /srv/homeassistant
-git clone 
+$ cd /srv/homeassistant
+$ git clone https://github.com/boazde/hassConfiguration.git
+$ sudo systemctl start home-assistant@homeassistant
 
 ```
 
