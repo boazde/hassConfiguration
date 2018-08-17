@@ -30,6 +30,8 @@ Steps for Installing Home Assitant on Rpi with raspbian
   ```
   sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service
   ```
+  
+  Edit the file and save with Ctrl+X
 
     [Unit]
     Description=Home Assistant
@@ -42,17 +44,21 @@ Steps for Installing Home Assitant on Rpi with raspbian
 
     [Install]
     WantedBy=multi-user.target
+    
 To have Home Assistant start automatically at boot, enable the service.
 
 ```
-sudo systemctl --system daemon-reload
+$ sudo systemctl --system daemon-reload
 $ sudo systemctl enable home-assistant@homeassistant
 ```
 
-Now the Home Assistant is ready and in order to have this configuration it is needed to follow the next steps:
+Now the Home Assistant is ready and in order to have this github configuration it is needed to follow the next steps:
 ```
-$ cd /srv/homeassistant
-$ git clone https://github.com/boazde/hassConfiguration.git
+$ cd /home/homeassistant/
+$ git clone https://github.com/boazde/hassConfiguration.git .homeassistant
+```
+It is needed to create the secret file 
+```
 $ sudo systemctl start home-assistant@homeassistant
 
 ```
