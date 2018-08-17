@@ -38,5 +38,8 @@ Steps for Installing Home Assitant on Rpi with raspbian
 
     [Install]
     WantedBy=multi-user.target
+To have Home Assistant start automatically at boot, enable the service.
 
-  $ sudo systemctl enable home-assistant@homeassistant
+```
+$ sudo systemctl enable home-assistant@homeassistant
+```
