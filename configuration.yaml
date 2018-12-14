@@ -104,8 +104,8 @@ notify:
     #- light
     #- group
 
-#myqtt:
-
+mqtt:
+   password : !secret http_password
 
 # Text to speech
 tts:
