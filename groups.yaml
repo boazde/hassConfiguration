@@ -8,13 +8,14 @@ Living Room:
     - media_player.yamaha
     - switch.lr_light1
     - switch.lr_light2
+    - switch.shoes_light
     - switch.TV_light
     - sensor.temperature
 Kitchen: 
   name: Kitchen
 #  control: hidden
   entities:
-    - switch.Kitchen
+    - switch.kitchen_light
 Bedroom: 
   name: Bed Room
 #  control: hidden

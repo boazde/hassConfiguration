@@ -38,11 +38,11 @@
       command_on: 'sgc0ACMLIwsjCyMLIwsjCwwhIwsMISMLIwsMISMLDCENISMLIwsjCw0hDSENIQwhIwsMIQ0AAVUAAAAA'
       command_off: 'sgc0ACMLIwsjCyMLIwsjCwwhIwsMISMLIwsMISMLDCENISMLIwsjCw0hDSENIQwhIwsMIQ0AAVUAAAAA'      
     kitchen_light:
-      friendly_name: "Kitchen"
+      friendly_name: "Kitchen Light"
       command_on: 'sgU0ACMLDCEjCwwhIwsjCwwhIwsNIQ0hIwsjCyMLDCEMISMLDCEMIQwhDQABVSMLIwsjCyMLIwsAAAAA'
       command_off: 'sgU0ACMLDCEjCwwhIwsjCwwhIwsNIQ0hIwsjCyMLDCEMISMLDCEMIQwhDQABVSMLIwsjCyMLIwsAAAAA'      
     shoes_light:
-      friendly_name: "shoes"
+      friendly_name: "Shoes Light"
       command_on: 'sgY0ACMLIwsMIgwhDCEjCwwiDCENAAFVIwsjDCILIwsjCyMLDCEjCwwhIwsjCwwiIgwMIQwhIwsAAAAA'
       command_off: 'sgY0ACMLIwsMIgwhDCEjCwwiDCENAAFVIwsjDCILIwsjCyMLDCEjCwwhIwsjCwwiIgwMIQwhIwsAAAAA'      
     bed_light:
