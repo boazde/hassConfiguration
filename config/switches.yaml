@@ -31,12 +31,20 @@
       command_off: 'JgBgAAABKJIUERQ2FDUVNRU1FTUUNhQRFDYUERQRFBEUERQRFBEUNhQRFDYUERQ2FBEUNhQRFBEUNhQRFDUVEBU1FRAVNRQ2FAAFFgABKEgVAAxOAAEoSBUADE4AAShIFAANBQAAAAAAAAAA'
     lr_light1:
       friendly_name: "Window light"
-      command_on: 'sgY0AAwhIwsMIgwhIwwjCyMLDSEMIgwhIwsMIQwhDAABVCMLIgsjCyMLIwsjCwwhIwsMISMLIwsAAAAA'
-      command_off: 'sgY0AAwhIwsMIgwhIwwjCyMLDSEMIgwhIwsMIQwhDAABVCMLIgsjCyMLIwsjCwwhIwsMISMLIwsAAAAA'
+      command_on: 'sgY0AAwhDCIiCwwAAVQiCyMLIgsjCyILIwsMISILDSEiDCMLDSEiCwwhDCEiCyMLIgsMIQ0hDCEAAAAA'
+      command_off: 'sgY0AAwhDCIiCwwAAVQiCyMLIgsjCyILIwsMISILDSEiDCMLDSEiCwwhDCEiCyMLIgsMIQ0hDCEAAAAA'
     lr_light2:
       friendly_name: "Center Light"
-      command_on: 'sgDAACELIgoMIQsgDCELIQshIQsMAAFTIQsiCiILIgoiCyIKDCAiCwshIgoiCwshIQsLIQwgIgshCyILCyELIQshCyELISIKDAABUyILIQsiCiILIQsiCwshIgoMISELIQsMICILCyELISILIQsiCgwhCyELIQshCyEhCwwAAVMiCyELIgoiCyILIQsLISIKDCEhCyILCyEhCwshCyEiCyELIgsLIQshCyEMIAshIgsLAAFUIQsiCyELIgoiCyILCAAF3AAAAAAAAAAA'
-      command_off: 'sgDAACELIgoMIQsgDCELIQshIQsMAAFTIQsiCiILIgoiCyIKDCAiCwshIgoiCwshIQsLIQwgIgshCyILCyELIQshCyELISIKDAABUyILIQsiCiILIQsiCwshIgoMISELIQsMICILCyELISILIQsiCgwhCyELIQshCyEhCwwAAVMiCyELIgoiCyILIQsLISIKDCEhCyILCyEhCwshCyEiCyELIgsLIQshCyEMIAshIgsLAAFUIQsiCyELIgoiCyILCAAF3AAAAAAAAAAA'      
+      command_on: 'sgc0ACMLIwsjCyMLIwsjCwwhIwsMISMLIwsMISMLDCENISMLIwsjCw0hDSENIQwhIwsMIQ0AAVUAAAAA'
+      command_off: 'sgc0ACMLIwsjCyMLIwsjCwwhIwsMISMLIwsMISMLDCENISMLIwsjCw0hDSENIQwhIwsMIQ0AAVUAAAAA'      
+    kitchen_light:
+      friendly_name: "Kitchen"
+      command_on: 'sgU0ACMLDCEjCwwhIwsjCwwhIwsNIQ0hIwsjCyMLDCEMISMLDCEMIQwhDQABVSMLIwsjCyMLIwsAAAAA'
+      command_off: 'sgU0ACMLDCEjCwwhIwsjCwwhIwsNIQ0hIwsjCyMLDCEMISMLDCEMIQwhDQABVSMLIwsjCyMLIwsAAAAA'      
+    shoes_light:
+      friendly_name: "shoes"
+      command_on: 'sgY0ACMLIwsMIgwhDCEjCwwiDCENAAFVIwsjDCILIwsjCyMLDCEjCwwhIwsjCwwiIgwMIQwhIwsAAAAA'
+      command_off: 'sgY0ACMLIwsMIgwhDCEjCwwiDCENAAFVIwsjDCILIwsjCyMLDCEjCwwhIwsjCwwiIgwMIQwhIwsAAAAA'      
     bed_light:
       friendly_name: "Bed light"
       command_on: 'sgc0AA4YDhkOGA4MGwwbGA4MGhkOGA4YDxgOGA4YDgwaDBoYDgwaDBsMGxgODBoMGwwbDBsAAVoAAAAA'
